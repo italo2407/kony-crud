@@ -1,0 +1,204 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_data_": [
+        {
+            "btnDelete": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Button"
+            },
+            "imgArrow": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "imagedrag.png"
+            },
+            "imgDelete": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "minus.png"
+            },
+            "lblFirstLetter": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "P"
+            },
+            "lblIconBackground": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblState": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Off"
+            }
+        },
+        {
+            "btnDelete": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Button"
+            },
+            "imgArrow": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "imagedrag.png"
+            },
+            "imgDelete": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "minus.png"
+            },
+            "lblFirstLetter": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "P"
+            },
+            "lblIconBackground": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblState": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Off"
+            }
+        },
+        {
+            "btnDelete": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Button"
+            },
+            "imgArrow": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "imagedrag.png"
+            },
+            "imgDelete": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "minus.png"
+            },
+            "lblFirstLetter": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "P"
+            },
+            "lblIconBackground": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblState": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Off"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "02",
+    "disabledSkins": {
+        "rowFocusSkin": "s22c6d91500b456cad310e21b5e9aedf",
+        "widgetSkin": "sbf246844b2f4909a288f5b794aed002"
+    },
+    "focusedindex": null,
+    "focuseditem": null,
+    "generatedtemplate": "i0bad5eac4bb4737a7a288f92f80b223",
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segListPerson",
+    "ide_onRowClick": "AS_Segment_b195d0ba68724857bef21681b9c75b19",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "fbccfaaf5960473cbf3d77575728ad21",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxScrollPersonList",
+    "pf": "frmHome",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainselection": false,
+    "rowTemplateId": "h1e537d13d674b068cddb4429804e473",
+    "rowcounter": 2,
+    "rowskin": "s908406feecd4358bb8a0518723bd2a9",
+    "rowtemplate": "flxRowPerson",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionheaderskin": "s0f2ff8a0af8426a98fc91f1bd306225",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorcolor": "aaaaaa00",
+    "separatorrequired": true,
+    "separatorthickness": 1,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "btnDelete": "btnDelete",
+        "flxBtnDelete": "flxBtnDelete",
+        "flxContent": "flxContent",
+        "flxIconPerson": "flxIconPerson",
+        "flxRowPerson": "flxRowPerson",
+        "imgArrow": "imgArrow",
+        "imgDelete": "imgDelete",
+        "lblFirstLetter": "lblFirstLetter",
+        "lblIconBackground": "lblIconBackground",
+        "lblName": "lblName",
+        "lblState": "lblState"
+    },
+    "zindex": 100
+}

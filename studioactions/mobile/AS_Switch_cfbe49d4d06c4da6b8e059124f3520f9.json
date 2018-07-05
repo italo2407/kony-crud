@@ -1,0 +1,24 @@
+{
+    "AS_Switch_cfbe49d4d06c4da6b8e059124f3520f9": {
+        "id": "AS_Switch_cfbe49d4d06c4da6b8e059124f3520f9",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmAddPerson",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f4c968579fd54bef97813daa435b32b8"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__bdd85a506d364be2964d78a51bdd4fec",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "alert(this.view.switchActive.selectedIndex);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

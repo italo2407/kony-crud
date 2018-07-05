@@ -1,0 +1,18 @@
+{
+    "AS_Button_d82b3d29f7d44c56bf45251a57f4c5e0": {
+        "id": "AS_Button_d82b3d29f7d44c56bf45251a57f4c5e0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmAddPerson",
+            "type": "forms",
+            "platform": null,
+            "KUID": "f4c968579fd54bef97813daa435b32b8"
+        },
+        "language": "js",
+        "actions": []
+    }
+}

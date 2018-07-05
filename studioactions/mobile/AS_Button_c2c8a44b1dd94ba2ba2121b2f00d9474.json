@@ -1,0 +1,27 @@
+{
+    "AS_Button_c2c8a44b1dd94ba2ba2121b2f00d9474": {
+        "id": "AS_Button_c2c8a44b1dd94ba2ba2121b2f00d9474",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "segRowPerson",
+            "type": "templates",
+            "platform": "",
+            "KUID": "h1e537d13d674b068cddb4429804e473"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__bdbd3249f6834f23b7dac860db71ed39",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "alert(\"Delete\");",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

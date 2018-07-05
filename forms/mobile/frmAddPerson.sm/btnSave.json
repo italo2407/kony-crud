@@ -1,0 +1,59 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "6%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "2%"
+    },
+    "_skin_": "s23cc623b441472e91a5f07d92b2eaf3",
+    "_text_": "Save",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "68dp"
+    },
+    "android": {
+        "psp": {}
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {
+        "pressedSkin": "sd7ec62062f1487aba1ce2d951fbfc6d"
+    },
+    "displaytext": true,
+    "focusskin": "sad09710c1824854ac4f31732186a7b6",
+    "id": "btnSave",
+    "ide_onClick": "AS_Button_d7317418607c4ade9849ee10cdca5560",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "e3a44bab48bc4f4d95f2b12362c485aa",
+    "name": "kony.ui.Button",
+    "parent": "flxAddPersonContent",
+    "pf": "frmAddPerson",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "wType": "Button",
+    "zindex": 1
+}

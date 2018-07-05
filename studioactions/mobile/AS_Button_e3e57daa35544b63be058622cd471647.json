@@ -1,0 +1,21 @@
+{
+    "AS_Button_e3e57daa35544b63be058622cd471647": {
+        "id": "AS_Button_e3e57daa35544b63be058622cd471647",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onClick_b37ddd26295f46a88126e1c230dd20a0",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "createPerson",
+            "display": "createPerson",
+            "inputparams": [],
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

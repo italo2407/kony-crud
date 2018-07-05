@@ -1,0 +1,40 @@
+{
+    "AS_Segment_b195d0ba68724857bef21681b9c75b19": {
+        "id": "AS_Segment_b195d0ba68724857bef21681b9c75b19",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___g98813f970fc4a5c9dee53d81452aa3d",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onRowClick",
+            "display": "onRowClick",
+            "inputparams": [{
+                "name": "seguiWidget",
+                "value": " eventobject"
+            }, {
+                "name": "sectionIndex",
+                "value": " sectionNumber"
+            }, {
+                "name": "rowIndex",
+                "value": " rowNumber"
+            }, {
+                "name": "isSelected",
+                "value": " eventobject"
+            }],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

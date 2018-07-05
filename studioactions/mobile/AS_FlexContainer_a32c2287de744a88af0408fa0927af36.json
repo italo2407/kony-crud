@@ -1,0 +1,21 @@
+{
+    "AS_FlexContainer_a32c2287de744a88af0408fa0927af36": {
+        "id": "AS_FlexContainer_a32c2287de744a88af0408fa0927af36",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "segRowPerson",
+            "type": "templates",
+            "platform": "",
+            "KUID": "h1e537d13d674b068cddb4429804e473"
+        },
+        "language": "js",
+        "actions": []
+    }
+}

@@ -1,0 +1,62 @@
+{
+    "classname": "AlertPopup",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "e12ed3d5b22d4381a362f2d92be05926",
+                    "paramList": [],
+                    "propertyIndex": 2,
+                    "propertyKey": "onSecondBtnClick",
+                    "pw": {
+                        "displayName": "onSecondBtnClick",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ec87578c31f44a29b89801750874a3bc",
+                    "type": "event"
+                }
+            ],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "a460b5188aca474491896a8135d73968",
+                    "originalPropertyKey": "onClick",
+                    "propertyIndex": 1,
+                    "propertyKey": "onFirstBtnClick",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "action",
+                        "displayName": "onFirstBtnClick",
+                        "srcWidget": "btn1",
+                        "type": "action",
+                        "uiRepresentation": "Label-Label-Button-Button",
+                        "wType": "Button"
+                    },
+                    "srcWgtKUID": "dbe83a807b8f45a0b17fdbb4419a772e"
+                }
+            ]
+        },
+        "groups": {
+            "apis": [],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.demo",
+    "version": "1.0.0"
+}

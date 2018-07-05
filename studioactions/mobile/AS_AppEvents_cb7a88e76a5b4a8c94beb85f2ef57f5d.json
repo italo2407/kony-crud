@@ -1,0 +1,22 @@
+{
+    "AS_AppEvents_cb7a88e76a5b4a8c94beb85f2ef57f5d": {
+        "id": "AS_AppEvents_cb7a88e76a5b4a8c94beb85f2ef57f5d",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___eb4b0ab6b8dc4f01a092c850df1cb061",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "setupSync",
+            "display": "setupSync",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "module"
+        }]
+    }
+}

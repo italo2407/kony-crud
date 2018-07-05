@@ -1,0 +1,21 @@
+{
+    "AS_Button_e360ec0e55e341f9bf1cee978bbfbb1a": {
+        "id": "AS_Button_e360ec0e55e341f9bf1cee978bbfbb1a",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onClick_b93682d5cf0c44a78e8481ed05d29941",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "goToHome",
+            "display": "goToHome",
+            "inputparams": [],
+            "callbackType": null,
+            "disabled": null,
+            "source": "module"
+        }]
+    }
+}
