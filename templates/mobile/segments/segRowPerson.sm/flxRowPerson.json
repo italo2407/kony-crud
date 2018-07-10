@@ -40,7 +40,7 @@
         "flxIconPerson",
         "imgArrow",
         "flxBtnDelete",
-        "flxContent"
+        "btnDetail"
     ],
     "clipbounds": true,
     "containerId": true,

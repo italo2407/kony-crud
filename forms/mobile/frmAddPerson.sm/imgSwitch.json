@@ -1,10 +1,11 @@
 {
-    "@class": "com.kony.gen.viz.model.component.KVizSwitch",
+    "@class": "com.kony.gen.viz.model.component.KVizImage2",
     "DNDConfig": null,
     "__parentReadjusting__": false,
+    "_base64_": null,
     "_height_": {
         "type": "string",
-        "value": "100%"
+        "value": "48dp"
     },
     "_margin_": [
         0,
@@ -22,42 +23,39 @@
         "type": "string",
         "value": "5%"
     },
-    "_skin_": "sa8f3965fc4a42cda1b0012c208b8026",
-    "_top_": {
-        "type": "number",
-        "value": "0"
-    },
+    "_skin_": "sa46cfc28da147aaa21fd1fb3fcebf91",
+    "_src_": "on.png",
     "_width_": {
         "type": "string",
-        "value": "25%"
+        "value": "48dp"
     },
     "canUpdateUI": true,
     "centery": {
         "type": "string",
-        "value": "50%"
+        "value": "50.00%"
     },
     "containerweight": 100,
-    "id": "switchActive",
-    "ide_onSlide": "AS_Switch_cfbe49d4d06c4da6b8e059124f3520f9",
+    "context": {
+        "channel": "mobile",
+        "formID": "frmAddPerson",
+        "platform": "android",
+        "templateType": "forms",
+        "topLevelBox": null
+    },
+    "id": "imgSwitch",
+    "imagescalemode": 1,
     "info": null,
+    "invokedProperty": "src",
     "iscustomlayout": false,
     "isvisible": true,
-    "kiosk": {
-        "render": false
-    },
-    "kuid": "b4f2a83b2b0b43d2ab09ef1c7f4bb2d4",
-    "leftsidetext": "ON",
-    "name": "kony.ui.Switch",
-    "onslide": null,
-    "osPlatform": "android",
-    "osVersion": "iOS7",
+    "kuid": "j15487c3102047a98c88874e9d414943",
+    "name": "kony.ui.Image2",
     "parent": "flxSwitch",
     "pf": "frmAddPerson",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
-    "rightsidetext": "OFF",
-    "selectedindex": 0,
-    "wType": "Switch",
+    "srcType": 1,
+    "wType": "Image",
     "widgetalignment": 5,
     "zindex": 1
 }

@@ -4,12 +4,16 @@ define({
         var navObj = new kony.mvc.Navigation("frmAddPerson");
         navObj.navigate();
     },
+    initForm: function() {
+        this.getPerson();
+    },
     getPerson: function() {
         personObj.get(null, this.onGetAllSuccess, onGetAllFail);
     },
     onGetAllSuccess: function(data) {
         personRecords = data;
         this.onSearch();
+        this.animateDeleteBtnSegment(false, true, "-11%");
     },
     populateSegment: function(records) {
         var objRecords = records;
@@ -38,76 +42,52 @@ define({
                 },
                 imgArrow: {
                     src: "arrow2.png"
+                },
+                btnDetail: {
+                    isVisible: true,
+                    onClick: this.onRowClick
+                },
+                btnDelete: {
+                    onClick: this.deleteAlertShow
                 }
             };
         }
         this.view.segListPerson.data = data;
         this.view.segListPerson.left = 0;
-        this.view.segListPerson.setAnimations(this.getAddRowAnim());
+        //this.view.segListPerson.setAnimations(this.getAddRowAnim());
     },
-    onRowClick: function(seguiWidget, sectionIndex, rowIndex, isSelected) {
-        selectedPerson = personFound[rowIndex];
-        alert("sectionIndex:" + sectionIndex + " RowIndex:" + rowIndex);
+    /*onRowClick:function(seguiWidget, sectionIndex, rowIndex, isSelected){
+     	selectedPerson = personFound[rowIndex];
+      	alert("RowIndex:"+this.view.segListPerson.selectedRowIndex);
+  		navigationForm("frmAddPerson");      	
+    },*/
+    onRowClick: function() {
+        this.getSelectedPerson();
         navigationForm("frmAddPerson");
     },
     goToAddForm: function() {
         navigationForm("frmPerson");
     },
-    getAddRowAnim: function() {
-        var transformProp1 = kony.ui.makeAffineTransform();
-        transformProp1.scale(0.0, 0.0);
-        var transformProp2 = kony.ui.makeAffineTransform();
-        transformProp2.scale(1, 1);
-        var animDefinitionOne = {
-            0: {
-                "anchorPoint": {
-                    "x": 0.5,
-                    "y": 0.5
-                },
-                "transform": transformProp1
-            },
-            100: {
-                "anchorPoint": {
-                    "x": 0.5,
-                    "y": 0.5
-                },
-                "transform": transformProp2
-            }
-        };
-        var animObj = kony.ui.createAnimation(animDefinitionOne);
-        var animConf = {
-            delay: 0,
-            fillMode: kony.anim.FILL_MODE_FORWARDS,
-            duration: 0.7
-        };
-        var addRowAnimtion = {
-            visible: {
-                definition: animObj,
-                config: animConf,
-                callbacks: null
-            }
-        };
-        return addRowAnimtion;
-    },
+    /*getAddRowAnim:function(){
+  		var transformProp1 = kony.ui.makeAffineTransform();
+ 		transformProp1.scale(0.0,0.0);  		
+ 		var transformProp2 = kony.ui.makeAffineTransform();
+ 		transformProp2.scale(1,1);
+ 		var animDefinitionOne = {0  : {"anchorPoint":{"x":0.5,"y":0.5},"transform":transformProp1},        
+             					 100 : {"anchorPoint":{"x":0.5,"y":0.5},"transform":transformProp2}
+            					} ;
+  		var animObj=kony.ui.createAnimation(animDefinitionOne);
+  		var animConf={delay:0,fillMode:kony.anim.FILL_MODE_FORWARDS,duration:0.7};
+  		var addRowAnimtion = { visible:{definition : animObj, config : animConf, callbacks : null }};
+ 		return addRowAnimtion;
+	},*/
     onDelete: function() {
-        this.view.btnDone.isVisible = true;
-        this.view.btnEdit.isVisible = false;
-        var jsonObj = {
-            rows: this.getSegmentRows(),
-            widgets: ["flxBtnDelete"],
-            animation: this.btnAnimation("0%")
-        };
-        this.view.segListPerson.animateRows(jsonObj);
+        if (personFound.length > 0) {
+            this.animateDeleteBtnSegment(true, false, "0%");
+        }
     },
     onDone: function() {
-        this.view.btnDone.isVisible = false;
-        this.view.btnEdit.isVisible = true;
-        var jsonObj = {
-            rows: this.getSegmentRows(),
-            widgets: ["flxBtnDelete"],
-            animation: this.btnAnimation("-11%")
-        };
-        this.view.segListPerson.animateRows(jsonObj);
+        this.getPerson();
     },
     getSegmentRows: function() {
         var rowList = [];
@@ -151,6 +131,80 @@ define({
                 return person.FirstName.toLowerCase().indexOf(q.toLowerCase()) > -1 || person.LastName.toLowerCase().indexOf(q.toLowerCase()) > -1;
             });
         }
+        if (personFound.length > 0) {
+            this.view.flxContentMessage.isVisible = false;
+            this.view.lblSearchMessage.isVisible = false;
+        } else {
+            this.view.flxContentMessage.isVisible = true;
+            this.view.lblSearchMessage.isVisible = true;
+        }
         this.populateSegment(personFound);
+    },
+    deleteAlertShow: function() {
+        this.getSelectedPerson();
+        this.view.ConfirmationPopup.isVisible = true;
+        this.view.ConfirmationPopup.btnDelete.text = "Delete " + selectedPerson.FirstName;
+    },
+    onCancelConfirmationPopup: function() {
+        this.view.ConfirmationPopup.isVisible = false;
+    },
+    getSelectedPerson: function() {
+        var rowIndex = this.view.segListPerson.selectedRowIndex[1];
+        alert("RowIndex : " + rowIndex);
+        selectedPerson = personFound[rowIndex];
+    },
+    onDeleteItem: function() {
+        var pk = {};
+        pk.Id = selectedPerson.Id;
+        var options = {
+            "primaryKeys": pk
+        };
+        personObj.deleteByPK(options, this.onDeleteSuccess, this.onDeleteFailure);
+    },
+    onDeleteSuccess: function() {
+        this.view.ConfirmationPopup.isVisible = false;
+        this.animationDeleteItemfromSegment();
+    },
+    onDeleteFailure: function(errorObj) {
+        alert("Delete failed with error " + errorObj.errorCode);
+    },
+    animateDeleteBtnSegment: function(isVisibleBtnDone, isVisibleBtnEdit, animationValue) {
+        this.view.btnDone.isVisible = isVisibleBtnDone;
+        this.view.btnEdit.isVisible = isVisibleBtnEdit;
+        var jsonObj = {
+            rows: this.getSegmentRows(),
+            widgets: ["flxBtnDelete"],
+            animation: this.btnAnimation(animationValue)
+        };
+        this.view.segListPerson.animateRows(jsonObj);
+    },
+    animationDeleteItemfromSegment: function() {
+        var rowIndex = parseInt(this.view.segListPerson.selectedRowIndex[1]);
+        //alert(rowIndex);
+        var transformProp1 = kony.ui.makeAffineTransform();
+        transformProp1.scale(1, 0);
+        var transformProp2 = kony.ui.makeAffineTransform();
+        transformProp2.scale(1, 1);
+        var animDefinitionOne = {
+            0: {
+                "transform": transformProp2
+            },
+            100: {
+                "transform": transformProp1
+            }
+        };
+        var animDefinition = kony.ui.createAnimation(animDefinitionOne);
+        var animConfig = {
+            "duration": 0.3,
+            "iterationCount": 1,
+            "delay": 0,
+            "fillMode": kony.anim.FORWARDS
+        };
+        var finalAnimation = {
+            definition: animDefinition,
+            config: animConfig
+        };
+        kony.print("\nrow index:-" + parseInt(rowIndex));
+        this.view.segListPerson.removeAt(rowIndex, 0, finalAnimation);
     }
 });

@@ -461,23 +461,38 @@ define("frmPerson", function() {
             }, {
                 "textCopyable": false
             });
-            var swActive = new kony.ui.Switch({
-                "height": "32dp",
-                "id": "swActive",
+            var imgSwitch = new kony.ui.Image2({
+                "centerY": "50.00%",
+                "height": "48dp",
+                "id": "imgSwitch",
                 "isVisible": true,
-                "left": "225dp",
-                "leftSideText": "ON",
-                "rightSideText": "OFF",
-                "selectedIndex": 0,
-                "skin": "CopydefSwitchNormal0e3d0d276ac024e",
-                "top": "24dp",
-                "width": "100dp",
+                "right": "5%",
+                "skin": "slImage",
+                "src": "on.png",
+                "width": "48dp",
                 "zIndex": 1
             }, {
+                "imageScaleMode": constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO,
                 "padding": [0, 0, 0, 0],
                 "paddingInPixel": false
             }, {});
-            flxActive.add(lblActive, swActive);
+            var btnSwitch = new kony.ui.Button({
+                "centerY": "50.00%",
+                "height": "48dp",
+                "id": "btnSwitch",
+                "isVisible": true,
+                "onClick": controller.AS_Button_ef68dab365aa4be0ab71b82d6a16a840,
+                "right": "5%",
+                "skin": "CopydefBtnNormal0h300ce46401643",
+                "width": "48dp",
+                "zIndex": 2
+            }, {
+                "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+                "displayText": true,
+                "padding": [0, 0, 0, 0],
+                "paddingInPixel": false
+            }, {});
+            flxActive.add(lblActive, imgSwitch, btnSwitch);
             var mainBar = new com.demo.mainBar({
                 "clipBounds": true,
                 "height": "100%",
@@ -490,7 +505,10 @@ define("frmPerson", function() {
                 "top": 0,
                 "width": "100%"
             }, {}, {});
+            mainBar.Label0fb6e8fcd09bc4d.left = null;
+            mainBar.Label0fb6e8fcd09bc4d.right = null;
             mainBar.Label0fb6e8fcd09bc4d.text = "Add Person";
+            mainBar.Label0fb6e8fcd09bc4d.top = null;
             mainBar.left = 0;
             mainBar.top = 0;
             flxAddContent.add(btnCancel, btnSave, flxFirstName, flxLastName, flxAddress, flxPhoneNumber, flxEmail, flxActive, mainBar);

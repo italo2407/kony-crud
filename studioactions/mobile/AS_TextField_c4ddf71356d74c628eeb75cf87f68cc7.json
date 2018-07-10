@@ -17,15 +17,11 @@
         },
         "language": "js",
         "actions": [{
-            "id": "INVOKE_FUNCTION___d612800f9e8f43e2bf7ef813157fc75b",
-            "type": "INVOKE_FUNCTION",
-            "sequenceKUID": "onSearch",
-            "display": "onSearch",
-            "inputparams": [],
+            "id": "ADD_SNIPPET__efff6b1210ce4e39b5641df110bc6839",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.onSearch();",
             "parentId": null,
-            "callbackType": null,
-            "disabled": null,
-            "source": "controller"
+            "callbackType": null
         }]
     }
 }

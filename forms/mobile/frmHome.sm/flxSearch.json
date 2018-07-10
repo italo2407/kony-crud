@@ -36,7 +36,8 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "txtSearch"
+        "txtSearch",
+        "flxSearchIcon"
     ],
     "clipbounds": true,
     "containerweight": 100,

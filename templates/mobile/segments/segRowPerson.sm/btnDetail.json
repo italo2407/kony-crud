@@ -1,4 +1,5 @@
 {
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
     "DNDConfig": null,
     "__parentReadjusting__": false,
     "_height_": {
@@ -7,23 +8,22 @@
     },
     "_left_": {
         "type": "string",
-        "value": "10%"
+        "value": "9.99%"
     },
     "_margin_": [
-        0,
-        0,
-        0,
-        0
+        6,
+        6,
+        6,
+        6
     ],
-    "_orientation_": 6,
     "_padding_": [
         0,
         0,
         0,
         0
     ],
-    "_percent_": true,
-    "_skin_": "sabe40458aaa467793c675b50e8e0f7f",
+    "_skin_": "s199cfec35894c1f9a607bfbd7f2fe02",
+    "_text_": "",
     "_top_": {
         "type": "string",
         "value": "0dp"
@@ -32,28 +32,24 @@
         "type": "string",
         "value": "90%"
     },
-    "allboxes": [],
-    "autogrowmode": 0,
     "canUpdateUI": true,
-    "children": [],
-    "clipbounds": true,
     "containerId": true,
     "containerweight": 100,
-    "enablescrolling": true,
-    "id": "flxContent",
+    "contentalignment": 5,
+    "disabledSkins": {
+        "focusSkin": "s527f925fc2540f4a55039567280e897"
+    },
+    "displaytext": true,
+    "id": "btnDetail",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "d37e5d783fca41c999764da9f184cce8",
-    "layouttype": 2,
-    "name": "kony.ui.FlexContainer",
+    "kuid": "d137b808fdfd4359afe552a611b4ad4d",
+    "name": "kony.ui.Button",
     "parent": "flxRowPerson",
     "pf": "segRowPerson",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
-    "snapgridsize": 10,
-    "snaptogrid": true,
-    "wType": "FlexContainer",
-    "widgetalignment": 1,
+    "wType": "Button",
     "zindex": 3
 }

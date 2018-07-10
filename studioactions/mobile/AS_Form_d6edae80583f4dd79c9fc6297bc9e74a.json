@@ -14,15 +14,11 @@
         },
         "language": "js",
         "actions": [{
-            "id": "INVOKE_FUNCTION___j44926236b444030ab17f5210606301e",
-            "type": "INVOKE_FUNCTION",
-            "sequenceKUID": "clearFields",
-            "display": "clearFields",
-            "inputparams": [],
+            "id": "ADD_SNIPPET__a94a1d5320fa4076b51a661b925f713f",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.clearFields();",
             "parentId": null,
-            "callbackType": null,
-            "disabled": null,
-            "source": "controller"
+            "callbackType": null
         }]
     }
 }

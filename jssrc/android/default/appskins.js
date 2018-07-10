@@ -5,11 +5,15 @@ function skinsInit() {
     CopyCopyslImage = "CopyCopyslImage";
     CopyCopysliPhoneSegmentHeader = "CopyCopysliPhoneSegmentHeader";
     CopyCopyslTitleBar4 = "CopyCopyslTitleBar4";
+    CopydefBtnFocus0ede632b6afdf4c = "CopydefBtnFocus0ede632b6afdf4c";
     CopydefBtnFocus0g144845dc16340 = "CopydefBtnFocus0g144845dc16340";
     CopydefBtnNormal0b21495e7977944 = "CopydefBtnNormal0b21495e7977944";
     CopydefBtnNormal0da0303679a5544 = "CopydefBtnNormal0da0303679a5544";
+    CopydefBtnNormal0dba70d758b074a = "CopydefBtnNormal0dba70d758b074a";
     CopydefBtnNormal0dc79d963079640 = "CopydefBtnNormal0dc79d963079640";
     CopydefBtnNormal0g0f4c36ffd424f = "CopydefBtnNormal0g0f4c36ffd424f";
+    CopydefBtnNormal0h300ce46401643 = "CopydefBtnNormal0h300ce46401643";
+    CopydefBtnNormal0i1c4598088034f = "CopydefBtnNormal0i1c4598088034f";
     CopydefBtnNormal0j8415ac2a69943 = "CopydefBtnNormal0j8415ac2a69943";
     CopydefLabel0a07a67479c9743 = "CopydefLabel0a07a67479c9743";
     CopydefLabel0ad7d0248b9fa43 = "CopydefLabel0ad7d0248b9fa43";
@@ -35,9 +39,11 @@ function skinsInit() {
     CopySKUNIRPL01319472f2ce943 = "CopySKUNIRPL01319472f2ce943";
     CopyslFbox0a75322c7f9f840 = "CopyslFbox0a75322c7f9f840";
     CopyslFbox0b5a158572c8645 = "CopyslFbox0b5a158572c8645";
+    CopyslFbox0bb04696af80142 = "CopyslFbox0bb04696af80142";
     CopyslFbox0be49e58b009946 = "CopyslFbox0be49e58b009946";
     CopyslFbox0c347c85e144943 = "CopyslFbox0c347c85e144943";
     CopyslFbox0c42cd21a69144f = "CopyslFbox0c42cd21a69144f";
+    CopyslFbox0cb50f0f5a22a4f = "CopyslFbox0cb50f0f5a22a4f";
     CopyslFbox0cc3a2769529b4c = "CopyslFbox0cc3a2769529b4c";
     CopyslFbox0d0c891bc0f194a = "CopyslFbox0d0c891bc0f194a";
     CopyslFbox0f77c398365124b = "CopyslFbox0f77c398365124b";
@@ -50,7 +56,9 @@ function skinsInit() {
     CopyslFbox0j2c69588d09149 = "CopyslFbox0j2c69588d09149";
     CopyslFbox0j38a5aa235a140 = "CopyslFbox0j38a5aa235a140";
     CopyslFbox0jb3979a19fb042 = "CopyslFbox0jb3979a19fb042";
+    CopyslFbox0jb8d8f81ce2a4b = "CopyslFbox0jb8d8f81ce2a4b";
     CopyslFontAwesomeIcon0ac5e14b09acc4a = "CopyslFontAwesomeIcon0ac5e14b09acc4a";
+    CopyslFontAwesomeIcon0d044f4af434b46 = "CopyslFontAwesomeIcon0d044f4af434b46";
     CopyslForm = "CopyslForm";
     CopyslForm0bb4fe550fcd743 = "CopyslForm0bb4fe550fcd743";
     CopyslForm0c11e0b2f8b804f = "CopyslForm0c11e0b2f8b804f";

@@ -14,6 +14,7 @@ define("frmLogin", function() {
                 "top": "0dp",
                 "width": "100%"
             }, {}, {});
+            login.touchIDProperty = false;
             login.encryptCredentials = true;
             login.passwordMinimumChar = 8;
             login.usernameMinimumChar = 8;

@@ -35,7 +35,7 @@ define("frmHome", function() {
             mainBar.top = "0dp";
             var flxFooter = new kony.ui.FlexContainer({
                 "autogrowMode": kony.flex.AUTOGROW_NONE,
-                "bottom": "-0.04%",
+                "bottom": "-0.08%",
                 "clipBounds": true,
                 "height": "9.21%",
                 "id": "flxFooter",
@@ -113,7 +113,6 @@ define("frmHome", function() {
                 "isVisible": true,
                 "layoutType": kony.flex.FREE_FORM,
                 "left": 0,
-                "onClick": controller.AS_FlexContainer_b8142dca12b34e5c94774766a26cb08a,
                 "skin": "slFbox",
                 "top": "0dp",
                 "width": "45dp",
@@ -160,7 +159,24 @@ define("frmHome", function() {
             }, {
                 "textCopyable": false
             });
-            fxlMenuSync.add(lblMenuSync, iconSync);
+            var btnSync = new kony.ui.Button({
+                "focusSkin": "CopydefBtnFocus0ede632b6afdf4c",
+                "height": "45dp",
+                "id": "btnSync",
+                "isVisible": true,
+                "left": 0,
+                "onClick": controller.AS_Button_ec5bab66cc924ee4989021328d081af6,
+                "skin": "CopydefBtnNormal0i1c4598088034f",
+                "top": 0,
+                "width": "45dp",
+                "zIndex": 1
+            }, {
+                "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+                "displayText": true,
+                "padding": [0, 0, 0, 0],
+                "paddingInPixel": false
+            }, {});
+            fxlMenuSync.add(lblMenuSync, iconSync, btnSync);
             var flxMenuExport = new kony.ui.FlexContainer({
                 "autogrowMode": kony.flex.AUTOGROW_NONE,
                 "centerY": "50%",
@@ -291,13 +307,14 @@ define("frmHome", function() {
                 "top": "15%",
                 "verticalScrollIndicator": true,
                 "width": "100%",
-                "zIndex": 2
+                "zIndex": 1
             }, {}, {});
             flxScrollPersonList.setDefaultUnit(kony.flex.DP);
             var segListPerson = new kony.ui.SegmentedUI2({
                 "autogrowMode": kony.flex.AUTOGROW_HEIGHT,
                 "data": [{
                     "btnDelete": "Button",
+                    "btnDetail": "Button",
                     "imgArrow": "imagedrag.png",
                     "imgDelete": "minus.png",
                     "lblFirstLetter": "P",
@@ -306,6 +323,7 @@ define("frmHome", function() {
                     "lblState": "Off"
                 }, {
                     "btnDelete": "Button",
+                    "btnDetail": "Button",
                     "imgArrow": "imagedrag.png",
                     "imgDelete": "minus.png",
                     "lblFirstLetter": "P",
@@ -314,6 +332,7 @@ define("frmHome", function() {
                     "lblState": "Off"
                 }, {
                     "btnDelete": "Button",
+                    "btnDetail": "Button",
                     "imgArrow": "imagedrag.png",
                     "imgDelete": "minus.png",
                     "lblFirstLetter": "P",
@@ -326,7 +345,6 @@ define("frmHome", function() {
                 "isVisible": true,
                 "left": "0dp",
                 "needPageIndicator": true,
-                "onRowClick": controller.AS_Segment_b195d0ba68724857bef21681b9c75b19,
                 "pageOffDotImage": "pageoffdot.png",
                 "pageOnDotImage": "pageondot.png",
                 "retainSelection": false,
@@ -343,8 +361,8 @@ define("frmHome", function() {
                 "viewType": constants.SEGUI_VIEW_TYPE_TABLEVIEW,
                 "widgetDataMap": {
                     "btnDelete": "btnDelete",
+                    "btnDetail": "btnDetail",
                     "flxBtnDelete": "flxBtnDelete",
-                    "flxContent": "flxContent",
                     "flxIconPerson": "flxIconPerson",
                     "flxRowPerson": "flxRowPerson",
                     "imgArrow": "imgArrow",
@@ -355,7 +373,7 @@ define("frmHome", function() {
                     "lblState": "lblState"
                 },
                 "width": "100%",
-                "zIndex": 100
+                "zIndex": 1
             }, {
                 "padding": [0, 0, 0, 0],
                 "paddingInPixel": false
@@ -377,21 +395,20 @@ define("frmHome", function() {
             flxSearch.setDefaultUnit(kony.flex.DP);
             var txtSearch = new kony.ui.TextBox2({
                 "autoCapitalize": constants.TEXTBOX_AUTO_CAPITALIZE_NONE,
-                "centerX": "50%",
                 "centerY": "50%",
                 "focusSkin": "defTextBoxFocus",
                 "height": "40dp",
                 "id": "txtSearch",
                 "isVisible": true,
                 "keyBoardStyle": constants.TEXTBOX_KEY_BOARD_STYLE_DEFAULT,
-                "left": "0dp",
+                "left": "12%",
                 "onDone": controller.AS_TextField_c4ddf71356d74c628eeb75cf87f68cc7,
                 "placeholder": "Search Persons",
                 "secureTextEntry": false,
                 "skin": "CopydefTextBoxNormal0c2b9aa1e832e4d",
                 "textInputMode": constants.TEXTBOX_INPUT_MODE_ANY,
                 "top": 0,
-                "width": "95%",
+                "width": "85%",
                 "zIndex": 3
             }, {
                 "containerHeightMode": constants.TEXTBOX_FONT_METRICS_DRIVEN_HEIGHT,
@@ -403,7 +420,42 @@ define("frmHome", function() {
                 "keyboardActionLabel": constants.TEXTBOX_KEYBOARD_LABEL_DEFAULT,
                 "viewType": constants.TEXTBOX_VIEW_TYPE_DEFAULT
             });
-            flxSearch.add(txtSearch);
+            var flxSearchIcon = new kony.ui.FlexContainer({
+                "autogrowMode": kony.flex.AUTOGROW_NONE,
+                "centerY": "50%",
+                "clipBounds": true,
+                "height": "40dp",
+                "id": "flxSearchIcon",
+                "isVisible": true,
+                "layoutType": kony.flex.FREE_FORM,
+                "left": "3.50%",
+                "skin": "CopyslFbox0jb8d8f81ce2a4b",
+                "width": "9%",
+                "zIndex": 3
+            }, {}, {});
+            flxSearchIcon.setDefaultUnit(kony.flex.DP);
+            var Search = new kony.ui.Label({
+                "centerX": "50%",
+                "centerY": "50%",
+                "id": "Search",
+                "isVisible": true,
+                "skin": "CopyslFontAwesomeIcon0d044f4af434b46",
+                "text": "",
+                "textStyle": {
+                    "letterSpacing": 0,
+                    "strikeThrough": false
+                },
+                "width": kony.flex.USE_PREFFERED_SIZE,
+                "zIndex": 1
+            }, {
+                "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+                "padding": [0, 0, 0, 0],
+                "paddingInPixel": false
+            }, {
+                "textCopyable": false
+            });
+            flxSearchIcon.add(Search);
+            flxSearch.add(txtSearch, flxSearchIcon);
             var flxContentMessage = new kony.ui.FlexContainer({
                 "autogrowMode": kony.flex.AUTOGROW_NONE,
                 "clipBounds": true,
@@ -413,9 +465,9 @@ define("frmHome", function() {
                 "layoutType": kony.flex.FREE_FORM,
                 "left": 0,
                 "skin": "slFbox",
-                "top": "15%",
+                "top": "15.00%",
                 "width": "100%",
-                "zIndex": 2
+                "zIndex": 300
             }, {}, {});
             flxContentMessage.setDefaultUnit(kony.flex.DP);
             var lblSearchMessage = new kony.ui.Label({
@@ -430,7 +482,7 @@ define("frmHome", function() {
                     "strikeThrough": false
                 },
                 "width": kony.flex.USE_PREFFERED_SIZE,
-                "zIndex": 100
+                "zIndex": 300
             }, {
                 "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
                 "padding": [0, 0, 0, 0],
@@ -439,7 +491,26 @@ define("frmHome", function() {
                 "textCopyable": false
             });
             flxContentMessage.add(lblSearchMessage);
-            flxHomeContent.add(mainBar, flxFooter, btnEdit, btnDone, btnAdd, flxScrollPersonList, flxSearch, flxContentMessage);
+            var ConfirmationPopup = new com.demo.ConfirmationPopup({
+                "clipBounds": true,
+                "height": "100%",
+                "id": "ConfirmationPopup",
+                "isVisible": false,
+                "layoutType": kony.flex.FREE_FORM,
+                "left": "0dp",
+                "masterType": constants.MASTER_TYPE_DEFAULT,
+                "skin": "CopyslFbox0bb04696af80142",
+                "top": "0dp",
+                "width": "100%",
+                "zIndex": 9999
+            }, {}, {});
+            ConfirmationPopup.isVisible = false;
+            ConfirmationPopup.zIndex = 9999;
+            ConfirmationPopup.btnCancel.onClick = controller.AS_Button_c54be1405bb140abb13ab3e68fe4f436;
+            ConfirmationPopup.btnDelete.onClick = controller.AS_Button_i75bc9a08e67472ca8696d1baa2306cc;
+            ConfirmationPopup.flxContent.zIndex = 99999;
+            ConfirmationPopup.flxContentButton.zIndex = 1;
+            flxHomeContent.add(mainBar, flxFooter, btnEdit, btnDone, btnAdd, flxScrollPersonList, flxSearch, flxContentMessage, ConfirmationPopup);
             this.add(flxHomeContent);
         };
         return [{
@@ -448,7 +519,7 @@ define("frmHome", function() {
             "id": "frmHome",
             "layoutType": kony.flex.FREE_FORM,
             "needAppMenu": false,
-            "preShow": controller.AS_Form_d2dcef19e8554a4e8efc7445cf112f1b,
+            "preShow": controller.AS_Form_f5937d2fc9b848768b7abe64ab4f2f07,
             "skin": "CopyslForm0bb4fe550fcd743"
         }, {
             "displayOrientation": constants.FORM_DISPLAY_ORIENTATION_PORTRAIT,

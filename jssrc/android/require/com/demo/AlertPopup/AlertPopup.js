@@ -5,11 +5,11 @@ define(function() {
             "isMaster": true,
             "height": "100%",
             "id": "AlertPopup",
-            "isVisible": true,
+            "isVisible": false,
             "layoutType": kony.flex.FREE_FORM,
-            "left": "0dp",
+            "left": "2dp",
             "skin": "CopyslFbox0be49e58b009946",
-            "top": "0dp",
+            "top": "-2dp",
             "width": "100%"
         }, {}, {});
         AlertPopup.setDefaultUnit(kony.flex.DP);

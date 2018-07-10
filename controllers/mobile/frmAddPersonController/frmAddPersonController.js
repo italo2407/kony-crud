@@ -1,5 +1,4 @@
-define({ 
-
+define({ 	
  //Type your controller code here 
 	frmAddPersonInit:function(){
      	if(selectedPerson){
@@ -8,7 +7,7 @@ define({
           this.view.txtEmail.text=selectedPerson.Email;
           this.view.txtAddress.text=selectedPerson.Address;
           this.view.txtPhoneNumber.text=selectedPerson.PhoneNumber;
-          this.view.switchActive.selectedIndex=parseInt(selectedPerson.Active)===1 ? parseInt(0) : parseInt(1);
+          this.view.imgSwitch.src =parseInt(selectedPerson.Active)===1 ? switchOn : switchOff;
         }
     },
   	onUpdate:function(){
@@ -18,7 +17,7 @@ define({
         updatedRecord.Email = this.view.txtEmail.text;
         updatedRecord.Address = this.view.txtAddress.text;
         updatedRecord.PhoneNumber = this.view.txtPhoneNumber.text;
-        updatedRecord.Active = parseInt(this.view.switchActive.selectedIndex)===1?false:true;
+        updatedRecord.Active = this.view.imgSwitch.src===switchOff ? false : true;
         var options = {};
         var primary = {'Id' : selectedPerson.Id};
         options.primaryKeys = primary;
@@ -31,5 +30,9 @@ define({
     },
 	onUpdateRecordFailed:function onUpdateRecordFailed(errorObj) {
 	  	alert("Update failed with error " + errorObj.errorCode);
+    },
+  	changeSwitchImg:function(){
+      	this.view.imgSwitch.src=this.view.imgSwitch.src === switchOff ? switchOn : switchOff; 
     }
+  
  });

@@ -11,6 +11,12 @@ define({
             "classname": "AlertPopup",
             "name": "com.demo.AlertPopup"
         });
+        kony.mvc.registry.add("com.demo.ConfirmationPopup", "ConfirmationPopup", "ConfirmationPopupController");
+        kony.application.registerMaster({
+            "namespace": "com.demo",
+            "classname": "ConfirmationPopup",
+            "name": "com.demo.ConfirmationPopup"
+        });
         kony.mvc.registry.add("com.demo.mainBar", "mainBar", "mainBarController");
         kony.application.registerMaster({
             "namespace": "com.demo",

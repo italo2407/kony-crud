@@ -18,7 +18,22 @@
             "type": "INVOKE_FUNCTION",
             "sequenceKUID": "performSyncOnPersons",
             "display": "performSyncOnPersons",
-            "inputparams": [],
+            "inputparams": [{
+                "name": "isVisibleLoading"
+            }],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "module"
+        }, {
+            "id": "INVOKE_FUNCTION___bc440fd7f23747fb8d4fcd9ec0ec030a",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "performSyncOnPersons",
+            "display": "performSyncOnPersons",
+            "inputparams": [{
+                "name": "isVisibleLoading",
+                "value": "true"
+            }],
             "parentId": null,
             "callbackType": null,
             "disabled": null,

@@ -36,11 +36,10 @@ function performSyncOnPersons() {
 
 function onSyncSuccess() {
     kony.print("Sync on person object Succeded");
-    alert("Sync on person object Succeded");
 }
 
 function onSyncFailure(error) {
-    alert("Sync on person object failed" + error.code);
+    kony.print("Sync on person object failed" + error.code);
 }
 /*function onSyncProgress(object){
     //alert(JSON.stringify(object));
@@ -72,12 +71,26 @@ function navigationForm(form) {
     var navObj = new kony.mvc.Navigation(form);
     navObj.navigate();
 }
-/*function SyncPromise(){
-  return new Promise(function(resolve,reject){
- 	performSyncOnPersons();
-    resolve(true);	
-  });
-}*/
+
+function SyncPromise() {
+    return new Promise(function(resolve, reject) {
+        performSyncOnPersons();
+        resolve(true);
+    });
+}
+
+function SyncPromiseManually() {
+    kony.application.showLoadingScreen(null, "Synchronizing ...", constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, null);
+    var promise = SyncPromise();
+    promise.then(function(result) {
+        kony.application.dismissLoadingScreen();
+        alert("Sync on person object Succeded");
+    }, function(err) {
+        kony.application.dismissLoadingScreen();
+        alert("Sync on person object failed");
+    });
+}
+
 function goToHome() {
     navigationForm("frmHome");
 }

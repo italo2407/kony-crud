@@ -14,15 +14,11 @@
         },
         "language": "js",
         "actions": [{
-            "id": "INVOKE_FUNCTION___a3ed74d56bde49a3a4985aa0a5d92074",
-            "type": "INVOKE_FUNCTION",
-            "sequenceKUID": "goToAddForm",
-            "display": "goToAddForm",
-            "inputparams": [],
+            "id": "ADD_SNIPPET__b82ae88da1c84001813aff68eeb81a40",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.goToAddForm();",
             "parentId": null,
-            "callbackType": null,
-            "disabled": null,
-            "source": "controller"
+            "callbackType": null
         }]
     }
 }

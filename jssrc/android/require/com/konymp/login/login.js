@@ -710,7 +710,7 @@ define(function() {
             "clipBounds": true,
             "height": "40%",
             "id": "flxEnableTouchIDPopup",
-            "isVisible": false,
+            "isVisible": true,
             "layoutType": kony.flex.FREE_FORM,
             "left": "0%",
             "skin": "konympEnableTouch",
@@ -1036,7 +1036,7 @@ define(function() {
         var imgClose = new kony.ui.Image2({
             "height": "100%",
             "id": "imgClose",
-            "isVisible": true,
+            "isVisible": false,
             "left": "0%",
             "skin": "slImage",
             "src": "clear_input_icon.png",

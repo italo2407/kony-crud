@@ -10,16 +10,16 @@ define({
     /** onClick defined for btnSave **/
     AS_Button_d7317418607c4ade9849ee10cdca5560: function AS_Button_d7317418607c4ade9849ee10cdca5560(eventobject) {
         var self = this;
-        return self.onUpdate.call(this);
+        this.onUpdate();
     },
-    /** onSlide defined for switchActive **/
-    AS_Switch_cfbe49d4d06c4da6b8e059124f3520f9: function AS_Switch_cfbe49d4d06c4da6b8e059124f3520f9(eventobject) {
+    /** onClick defined for btnSwitch **/
+    AS_Button_jda00717888947849addd756198a1580: function AS_Button_jda00717888947849addd756198a1580(eventobject) {
         var self = this;
-        alert(this.view.switchActive.selectedIndex);
+        this.changeSwitchImg();
     },
     /** preShow defined for frmAddPerson **/
     AS_Form_c808e2a763254c22b53d80532b5b520b: function AS_Form_c808e2a763254c22b53d80532b5b520b(eventobject) {
         var self = this;
-        return self.frmAddPersonInit.call(this);
+        this.frmAddPersonInit();
     }
 });

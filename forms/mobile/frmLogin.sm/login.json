@@ -39,7 +39,8 @@
     "clipbounds": true,
     "containerweight": 0,
     "data": {
-        "ide_loginSuccessEvent": "AS_UWI_b8948ba8afcd446f9eab001d3d8cb7f4"
+        "ide_loginSuccessEvent": "AS_UWI_b8948ba8afcd446f9eab001d3d8cb7f4",
+        "touchIDProperty": false
     },
     "id": "login",
     "info": null,

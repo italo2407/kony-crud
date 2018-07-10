@@ -233,25 +233,38 @@ define("frmAddPerson", function() {
             }, {
                 "textCopyable": false
             });
-            var switchActive = new kony.ui.Switch({
-                "centerY": "50%",
-                "height": "100%",
-                "id": "switchActive",
+            var imgSwitch = new kony.ui.Image2({
+                "centerY": "50.00%",
+                "height": "48dp",
+                "id": "imgSwitch",
                 "isVisible": true,
-                "leftSideText": "ON",
-                "onSlide": controller.AS_Switch_cfbe49d4d06c4da6b8e059124f3520f9,
                 "right": "5%",
-                "rightSideText": "OFF",
-                "selectedIndex": 0,
-                "skin": "CopydefSwitchNormal0eb85bd5d502042",
-                "top": 0,
-                "width": "25%",
+                "skin": "slImage",
+                "src": "on.png",
+                "width": "48dp",
                 "zIndex": 1
             }, {
+                "imageScaleMode": constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO,
                 "padding": [0, 0, 0, 0],
                 "paddingInPixel": false
             }, {});
-            flxSwitch.add(lblActive, switchActive);
+            var btnSwitch = new kony.ui.Button({
+                "centerY": "50.00%",
+                "height": "48dp",
+                "id": "btnSwitch",
+                "isVisible": true,
+                "onClick": controller.AS_Button_jda00717888947849addd756198a1580,
+                "right": "5%",
+                "skin": "CopydefBtnNormal0h300ce46401643",
+                "width": "48dp",
+                "zIndex": 2
+            }, {
+                "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+                "displayText": true,
+                "padding": [0, 0, 0, 0],
+                "paddingInPixel": false
+            }, {});
+            flxSwitch.add(lblActive, imgSwitch, btnSwitch);
             flxAddPersonContent.add(mainBar, btnCancel, btnSave, txtFirstName, txtLastName, txtAddress, txtPhoneNumber, txtEmail, flxSwitch);
             this.add(flxAddPersonContent);
         };

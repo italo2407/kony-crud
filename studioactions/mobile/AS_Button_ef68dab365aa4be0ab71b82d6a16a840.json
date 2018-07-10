@@ -1,0 +1,17 @@
+{
+    "AS_Button_ef68dab365aa4be0ab71b82d6a16a840": {
+        "id": "AS_Button_ef68dab365aa4be0ab71b82d6a16a840",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_d6d248cd43ba4bd995dcc00fc28e4e5a",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.changeSwitchImg();",
+            "callbackType": null
+        }]
+    }
+}

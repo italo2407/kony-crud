@@ -1,0 +1,18 @@
+{
+    "AS_Button_a340bd2b055744aa8c7632573d7b9afb": {
+        "id": "AS_Button_a340bd2b055744aa8c7632573d7b9afb",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "RAISE_CUSTOM_EVENT__ide_onClick_af984fd22b77400c81ea7fa3117b7a5b",
+            "type": "RAISE_CUSTOM_EVENT",
+            "customEvent": "onSecondBtnClick",
+            "inputparams": [],
+            "callbackType": null
+        }]
+    }
+}

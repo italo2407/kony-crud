@@ -1,0 +1,24 @@
+{
+    "AS_Button_jda00717888947849addd756198a1580": {
+        "id": "AS_Button_jda00717888947849addd756198a1580",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmAddPerson",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f4c968579fd54bef97813daa435b32b8"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__gfd8f90874d641e297ef25f45337a882",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.changeSwitchImg();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

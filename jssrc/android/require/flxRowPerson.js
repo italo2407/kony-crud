@@ -17,7 +17,7 @@ define("flxRowPerson", function() {
             "centerY": "50%",
             "id": "lblName",
             "isVisible": true,
-            "left": "27%",
+            "left": "25%",
             "skin": "CopydefLabel0a07a67479c9743",
             "text": "Label",
             "textStyle": {
@@ -73,7 +73,7 @@ define("flxRowPerson", function() {
         var lblIconBackground = new kony.ui.Label({
             "centerX": "50.00%",
             "centerY": "50.00%",
-            "height": "40dp",
+            "height": "30dp",
             "id": "lblIconBackground",
             "isVisible": true,
             "skin": "CopydefLabel0bd36518d832446",
@@ -81,7 +81,7 @@ define("flxRowPerson", function() {
                 "letterSpacing": 0,
                 "strikeThrough": false
             },
-            "width": "40dp",
+            "width": "30dp",
             "zIndex": 1
         }, {
             "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
@@ -173,22 +173,22 @@ define("flxRowPerson", function() {
             "paddingInPixel": false
         }, {});
         flxBtnDelete.add(btnDelete, imgDelete);
-        var flxContent = new kony.ui.FlexContainer({
-            "autogrowMode": kony.flex.AUTOGROW_NONE,
-            "clipBounds": true,
+        var btnDetail = new kony.ui.Button({
             "height": "60dp",
-            "id": "flxContent",
+            "id": "btnDetail",
             "isVisible": true,
-            "layoutType": kony.flex.FREE_FORM,
-            "left": "10%",
-            "skin": "slFbox",
+            "left": "9.99%",
+            "skin": "CopydefBtnNormal0dba70d758b074a",
             "top": "0dp",
             "width": "90%",
             "zIndex": 3
-        }, {}, {});
-        flxContent.setDefaultUnit(kony.flex.DP);
-        flxContent.add();
-        flxRowPerson.add(lblName, lblState, flxIconPerson, imgArrow, flxBtnDelete, flxContent);
+        }, {
+            "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+            "displayText": true,
+            "padding": [0, 0, 0, 0],
+            "paddingInPixel": false
+        }, {});
+        flxRowPerson.add(lblName, lblState, flxIconPerson, imgArrow, flxBtnDelete, btnDetail);
         return flxRowPerson;
     }
 })

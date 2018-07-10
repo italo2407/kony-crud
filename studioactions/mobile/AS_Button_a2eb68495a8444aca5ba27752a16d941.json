@@ -1,0 +1,24 @@
+{
+    "AS_Button_a2eb68495a8444aca5ba27752a16d941": {
+        "id": "AS_Button_a2eb68495a8444aca5ba27752a16d941",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHome",
+            "type": "forms",
+            "platform": "",
+            "KUID": "c344aecc28cc48ab8cfdc056362c1ebb"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__c20ca061a2154933bc16035f516bd481",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.onCancelConfirmationPopup();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

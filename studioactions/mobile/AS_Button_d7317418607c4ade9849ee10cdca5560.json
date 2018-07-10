@@ -14,15 +14,11 @@
         },
         "language": "js",
         "actions": [{
-            "id": "INVOKE_FUNCTION___aa3a19c30ac24aa6bb6a538e3aee7460",
-            "type": "INVOKE_FUNCTION",
-            "sequenceKUID": "onUpdate",
-            "display": "onUpdate",
-            "inputparams": [],
+            "id": "ADD_SNIPPET__ce5ba83134fe4a7bbd3f414dc4496168",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.onUpdate();",
             "parentId": null,
-            "callbackType": null,
-            "disabled": null,
-            "source": "controller"
+            "callbackType": null
         }]
     }
 }

@@ -4,7 +4,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "40dp"
+        "value": "30dp"
     },
     "_margin_": [
         1,
@@ -22,7 +22,7 @@
     "_text_": "",
     "_width_": {
         "type": "string",
-        "value": "40dp"
+        "value": "30dp"
     },
     "_wrapping_": 2,
     "android": {

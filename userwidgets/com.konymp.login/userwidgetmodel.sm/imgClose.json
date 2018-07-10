@@ -45,7 +45,7 @@
     "id": "imgClose",
     "imagescalemode": 1,
     "info": null,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "f4e35f36434847519b6afb42617d69d4",
     "name": "kony.ui.Image2",
     "parent": "flxClose",

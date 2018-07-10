@@ -43,7 +43,8 @@
         "btnAdd",
         "flxScrollPersonList",
         "flxSearch",
-        "flxContentMessage"
+        "flxContentMessage",
+        "ConfirmationPopup"
     ],
     "clipbounds": true,
     "containerweight": 100,

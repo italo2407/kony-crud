@@ -1,0 +1,24 @@
+{
+    "AS_FlexContainer_f76b5d9a80d6418b896cc0c7c012c2c3": {
+        "id": "AS_FlexContainer_f76b5d9a80d6418b896cc0c7c012c2c3",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHome",
+            "type": "forms",
+            "platform": "",
+            "KUID": "c344aecc28cc48ab8cfdc056362c1ebb"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__ab1bfb8aa84c41589dc5e69d3ace0ca4",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.SyncPromiseManually();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

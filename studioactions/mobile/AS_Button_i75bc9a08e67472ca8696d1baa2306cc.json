@@ -1,0 +1,24 @@
+{
+    "AS_Button_i75bc9a08e67472ca8696d1baa2306cc": {
+        "id": "AS_Button_i75bc9a08e67472ca8696d1baa2306cc",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHome",
+            "type": "forms",
+            "platform": "",
+            "KUID": "c344aecc28cc48ab8cfdc056362c1ebb"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__df89a00b60894d738c8a4b430d236651",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.onDeleteItem();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

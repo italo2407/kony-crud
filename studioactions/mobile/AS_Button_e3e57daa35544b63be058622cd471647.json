@@ -8,14 +8,11 @@
         }],
         "language": "js",
         "actions": [{
-            "id": "INVOKE_FUNCTION__ide_onClick_b37ddd26295f46a88126e1c230dd20a0",
-            "type": "INVOKE_FUNCTION",
-            "sequenceKUID": "createPerson",
-            "display": "createPerson",
-            "inputparams": [],
-            "callbackType": null,
-            "disabled": null,
-            "source": "controller"
+            "id": "ADD_SNIPPET__a1eed73169b44e6fb52cac3d185c954c",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.createPerson();",
+            "parentId": null,
+            "callbackType": null
         }]
     }
 }

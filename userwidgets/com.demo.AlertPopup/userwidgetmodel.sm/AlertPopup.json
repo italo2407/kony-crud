@@ -7,7 +7,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "0dp"
+        "value": "2dp"
     },
     "_margin_": [
         0,
@@ -26,7 +26,7 @@
     "_skin_": "scb7da6c8cd74eb5b39e25c4c99770d5",
     "_top_": {
         "type": "string",
-        "value": "0dp"
+        "value": "-2dp"
     },
     "_width_": {
         "type": "string",
@@ -43,7 +43,7 @@
     "id": "AlertPopup",
     "info": null,
     "iscustomlayout": false,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "ec87578c31f44a29b89801750874a3bc",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",

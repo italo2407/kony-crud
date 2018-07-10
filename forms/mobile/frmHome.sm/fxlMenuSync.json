@@ -45,13 +45,13 @@
     },
     "children": [
         "lblMenuSync",
-        "iconSync"
+        "iconSync",
+        "btnSync"
     ],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
     "id": "fxlMenuSync",
-    "ide_onClick": "AS_FlexContainer_b8142dca12b34e5c94774766a26cb08a",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,

@@ -37,7 +37,8 @@
     "canUpdateUI": true,
     "children": [
         "lblActive",
-        "switchActive"
+        "imgSwitch",
+        "btnSwitch"
     ],
     "clipbounds": true,
     "containerweight": 100,

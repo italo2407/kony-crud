@@ -47,7 +47,25 @@
                 "srcKUID": "e197be99a9b1405dad7db3e679408bb1",
                 "wType": "Label"
             },
-            "text": "Add Person"
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": ""
+                }
+            },
+            "right": {
+                "Default": {
+                    "type": "string",
+                    "value": ""
+                }
+            },
+            "text": "Add Person",
+            "top": {
+                "Default": {
+                    "type": "string",
+                    "value": ""
+                }
+            }
         },
         "flxHeader": {
             "__events__": {},

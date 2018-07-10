@@ -11,7 +11,7 @@ define({
     person1.Email = this.view.txtEmail.text;
     person1.Address = this.view.txtAddress.text;
     person1.PhoneNumber = this.view.txtPhoneNumber.text;
-    person1.Active = parseInt(this.view.swActive.selectedIndex)===1?false:true;    
+    person1.Active = this.view.imgSwitch.src===switchOff ? false : true;    
     //Call the objects create API
     persons.create(person1, options, this.onSuccess, this.onFailure); //persists records db.    
   },
@@ -29,6 +29,9 @@ define({
     this.view.txtAddress.text="";
     this.view.txtEmail.text="";
     this.view.txtPhoneNumber.text="";
-    this.view.swActive.selectedIndex=0;
+    this.view.imgSwitch.src=switchOn;
+  },
+  changeSwitchImg:function(){
+      	this.view.imgSwitch.src=this.view.imgSwitch.src === switchOff ? switchOn : switchOff; 
   }
  });
